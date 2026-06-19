@@ -113,8 +113,17 @@
           <div class="about-visual-container">
             <!-- Left bubble (Family) -->
             <div class="about-bubble about-bubble-domus">
-              <div style="width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, var(--accent-domus), #f97316); display: grid; place-items: center; color: white;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, var(--accent-domus), #f97316); display: grid; place-items: center; color: white; padding: 6px;">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 100%; height: 100%;">
+                  <mask id="domus-mask-bubble">
+                    <rect width="24" height="24" fill="white" />
+                    <circle cx="9" cy="14" r="2" fill="black" />
+                    <circle cx="15" cy="14" r="2" fill="black" />
+                    <circle cx="12" cy="18" r="2" fill="black" />
+                    <path d="M9 14L15 14M9 14L12 18M15 14L12 18" stroke="black" stroke-width="1.5" />
+                  </mask>
+                  <path d="M12 2L1 12H4V21C4 21.5523 4.44772 22 5 22H19C19.5523 22 20 21.5523 20 21V12H23L12 2Z" mask="url(#domus-mask-bubble)" />
+                </svg>
               </div>
               <div>
                 <div style="font-weight: 700; font-size: 0.95rem; color: #fff; margin-bottom: 2px;">DomusDash</div>
@@ -124,8 +133,14 @@
             
             <!-- Right bubble (Workouts) -->
             <div class="about-bubble about-bubble-iron">
-              <div style="width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, var(--accent-iron), #0284c7); display: grid; place-items: center; color: white;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, var(--accent-iron), #0284c7); display: grid; place-items: center; color: white; padding: 7px;">
+                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" style="width: 100%; height: 100%;">
+                  <circle cx="50" cy="50" r="42" stroke-width="5.5"/>
+                  <circle cx="50" cy="50" r="26" stroke-width="2.5"/>
+                  <circle cx="50" cy="50" r="14" stroke-width="5.5"/>
+                  <line x1="50" y1="50" x2="60" y2="40" stroke-width="5.5" stroke-linecap="round"/>
+                  <circle cx="50" cy="50" r="2.5" fill="currentColor"/>
+                </svg>
               </div>
               <div>
                 <div style="font-weight: 700; font-size: 0.95rem; color: #fff; margin-bottom: 2px;">IronDial</div>
@@ -153,8 +168,17 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-domus)" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
           <div class="product-logo">
-            <div class="product-logo-icon product-logo-icon-domus">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+            <div class="product-logo-icon product-logo-icon-domus" style="padding: 7px;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width: 100%; height: 100%;">
+                <mask id="domus-mask-card">
+                  <rect width="24" height="24" fill="white" />
+                  <circle cx="9" cy="14" r="2" fill="black" />
+                  <circle cx="15" cy="14" r="2" fill="black" />
+                  <circle cx="12" cy="18" r="2" fill="black" />
+                  <path d="M9 14L15 14M9 14L12 18M15 14L12 18" stroke="black" stroke-width="1.5" />
+                </mask>
+                <path d="M12 2L1 12H4V21C4 21.5523 4.44772 22 5 22H19C19.5523 22 20 21.5523 20 21V12H23L12 2Z" mask="url(#domus-mask-card)" />
+              </svg>
             </div>
             <span class="product-name">DomusDash</span>
           </div>
@@ -222,8 +246,14 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-iron)" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
           </div>
           <div class="product-logo">
-            <div class="product-logo-icon product-logo-icon-iron">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <div class="product-logo-icon product-logo-icon-iron" style="padding: 8px;">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" style="width: 100%; height: 100%;">
+                <circle cx="50" cy="50" r="42" stroke-width="5.5"/>
+                <circle cx="50" cy="50" r="26" stroke-width="2.5"/>
+                <circle cx="50" cy="50" r="14" stroke-width="5.5"/>
+                <line x1="50" y1="50" x2="60" y2="40" stroke-width="5.5" stroke-linecap="round"/>
+                <circle cx="50" cy="50" r="2.5" fill="currentColor"/>
+              </svg>
             </div>
             <span class="product-name">IronDial</span>
           </div>

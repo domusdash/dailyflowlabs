@@ -875,14 +875,12 @@ header {
 }
 
 .product-cta-iron {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
+  background: var(--accent-iron);
+  color: #030303;
 }
 
 .product-cta-iron:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: #38bdf8;
   transform: translateY(-1px);
 }
 
