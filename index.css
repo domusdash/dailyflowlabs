@@ -517,57 +517,100 @@ header {
   pointer-events: none;
 }
 
-.about-visual-container {
-  position: relative;
+.about-suite-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-suite-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent-indigo);
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.about-apps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
   width: 100%;
-  max-width: 320px;
-  height: 260px;
+}
+
+.about-app-chip {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 12px 14px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.about-bubble {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  border-radius: 24px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: var(--transition-smooth);
+.about-app-chip:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
 }
 
-.about-bubble-domus {
-  left: 0;
-  top: 20px;
-  background: rgba(245, 158, 11, 0.03);
-  border: 1.5px solid rgba(245, 158, 11, 0.15);
-  transform: rotate(-4deg);
+.about-chip-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: white;
+  flex-shrink: 0;
+  padding: 6px;
 }
 
-.about-bubble-domus:hover {
-  transform: rotate(-4deg) translateY(-8px);
-  border-color: var(--accent-domus);
-  box-shadow: 0 15px 35px rgba(245, 158, 11, 0.15);
+.about-chip-domus { background: linear-gradient(135deg, var(--accent-domus), #f97316); }
+.about-app-domus:hover { border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 6px 20px rgba(245, 158, 11, 0.15); }
+
+.about-chip-iron { background: linear-gradient(135deg, var(--accent-iron), #0284c7); padding: 7px; }
+.about-app-iron:hover { border-color: rgba(14, 165, 233, 0.4); box-shadow: 0 6px 20px rgba(14, 165, 233, 0.15); }
+
+.about-chip-thumbverify { background: linear-gradient(135deg, var(--accent-thumbverify), #7c3aed); padding: 6px; }
+.about-app-thumbverify:hover { border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 6px 20px rgba(139, 92, 246, 0.15); }
+
+.about-chip-redact { background: linear-gradient(135deg, var(--accent-redact), #059669); padding: 6px; }
+.about-app-redact:hover { border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 6px 20px rgba(16, 185, 129, 0.15); }
+
+.about-chip-icons { background: linear-gradient(135deg, var(--accent-icons), #e11d48); padding: 6px; }
+.about-app-icons:hover { border-color: rgba(244, 63, 94, 0.4); box-shadow: 0 6px 20px rgba(244, 63, 94, 0.15); }
+
+.about-chip-blueprint { background: linear-gradient(135deg, var(--accent-blueprint), #0284c7); padding: 6px; }
+.about-app-blueprint:hover { border-color: rgba(56, 189, 248, 0.4); box-shadow: 0 6px 20px rgba(56, 189, 248, 0.15); }
+
+.about-chip-world { background: linear-gradient(135deg, var(--accent-world), #e11d48); padding: 6px; }
+.about-app-world:hover { border-color: rgba(255, 42, 95, 0.4); box-shadow: 0 6px 20px rgba(255, 42, 95, 0.15); }
+
+.about-chip-text {
+  overflow: hidden;
 }
 
-.about-bubble-iron {
-  right: 0;
-  bottom: 20px;
-  background: rgba(14, 165, 233, 0.03);
-  border: 1.5px solid rgba(14, 165, 233, 0.15);
-  transform: rotate(4deg);
+.about-chip-name {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.about-bubble-iron:hover {
-  transform: rotate(4deg) translateY(-8px);
-  border-color: var(--accent-iron);
-  box-shadow: 0 15px 35px rgba(14, 165, 233, 0.15);
+.about-chip-sub {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 /* --- Products Showcase Grid --- */
 .products-grid {
