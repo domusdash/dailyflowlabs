@@ -1,0 +1,11 @@
+# Daily Flow Labs
+
+A premium software studio crafting privacy-first, offline-capable utilities to streamline your daily flow. Home to specialized fitness, logistics, security, and developer utilities.
+
+## Products
+- [DomusDash](https://domusdash.com/): Zero-knowledge shared family dashboard and document vault.
+- [IronDial](https://irondial.com/): Voice-to-text workout logging, supplement tracker, and biometric health analyzer.
+- [LocalRedactPDF](https://localredactpdf.com/): Browser-local PDF redaction and censorship sandbox using WebAssembly.
+- [FreeQRCode](https://freeqrcode.pro/): Offline, static custom QR code generator with gradients and logo support.
+- [Shortcode Icons](https://shortcodeicons.com/): Custom application icons formatted specifically for macOS and iOS launchers.
+- [News & Blog](https://dailyflowlabs.com/news.html): Read recent updates, releases, and privacy-first software development guides.
