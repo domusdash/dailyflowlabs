@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <title>Subscription Confirmed - Daily Flow Labs</title>
+  <meta name="description" content="Subscription confirmed for Daily Flow Labs newsletter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .subscribed-card {
+      max-width: 540px;
+      width: 90%;
+      padding: 48px 32px;
+      text-align: center;
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    .badge-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 24px auto;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(52, 211, 153, 0.1) 100%);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .badge-text {
+      color: #10b981;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin: 12px 0 16px 0;
+    }
+    p {
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+    .btn-home {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="subscribed-card">
+    <div class="badge-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <span class="badge-text">Subscription Confirmed</span>
+    <h1>You're on the list!</h1>
+    <p>Thank you for confirming your email address. You will now receive news, daily insights, and updates from Daily Flow Labs.</p>
+    <a href="/" class="btn-home">Return to Home</a>
+  </div>
+</body>
+</html>
